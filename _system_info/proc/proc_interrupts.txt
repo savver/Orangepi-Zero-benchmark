@@ -1,0 +1,41 @@
+orangepi@orangepizero:~$ cat /proc/interrupts
+orangepi@orangepizero:~$ uname -a
+	Linux orangepizero 5.9.14-sunxi #20.11.3 SMP Fri Dec 11 20:31:12 CET 2020 armv7l GNU/Linux
+
+orangepi@orangepizero:~$ cat /proc/interrupts
+
+			   CPU0       CPU1       CPU2       CPU3
+	 17:          0          0          0          0     GICv2  50 Level     timer@1c20c00
+	 18:          0          0          0          0     GICv2  29 Level     arch_timer
+	 19:      18769      14049      15072      12795     GICv2  30 Level     arch_timer
+	 22:          0          0          0          0     GICv2  82 Level     1c02000.dma-controller
+	 24:      94698          0          0          0     GICv2  92 Level     sunxi-mmc
+	 25:      21963          0          0          0     GICv2  93 Level     sunxi-mmc
+	 27:          0          0          0          0     GICv2 103 Level     musb-hdrc.2.auto
+	 28:          0          0          0          0     GICv2 104 Level     ehci_hcd:usb1
+	 29:          0          0          0          0     GICv2 105 Level     ohci_hcd:usb2
+	 30:          0          0          0          0     GICv2 106 Level     ehci_hcd:usb3
+	 31:          0          0          0          0     GICv2 107 Level     ohci_hcd:usb6
+	 32:          0          0          0          0     GICv2 108 Level     ehci_hcd:usb4
+	 33:          0          0          0          0     GICv2 109 Level     ohci_hcd:usb7
+	 34:          0          0          0          0     GICv2 110 Level     ehci_hcd:usb5
+	 35:          0          0          0          0     GICv2 111 Level     ohci_hcd:usb8
+	 39:       2362          0          0          0     GICv2 114 Level     eth0
+	 41:        817          0          0          0     GICv2  32 Level     ttyS0
+	 42:          0          0          0          0  sun6i-r-intc   8 Level     1f00000.rtc
+	 46:          0          0          0          0     GICv2  90 Level     1c0e000.video-codec
+	 47:          0          0          0          0     GICv2 126 Level     sun8i-ce-ns
+	 55:       2538          0          0          0     GICv2  63 Level     ths
+	 56:          0          0          0          0     GICv2 152 Level     arm-pmu
+	 57:          0          0          0          0     GICv2 153 Level     arm-pmu
+	 58:          0          0          0          0     GICv2 154 Level     arm-pmu
+	 59:          0          0          0          0     GICv2 155 Level     arm-pmu
+	102:        349          0          0          0  sunxi_pio_edge  42 Edge      xradio
+	104:          1          0          0          0  sunxi_pio_edge  44 Edge      usb0-id-det
+	IPI0:          0          0          0          0  CPU wakeup interrupts
+	IPI1:          0          0          0          0  Timer broadcast interrupts
+	IPI2:       3480      19138      23688      17287  Rescheduling interrupts
+	IPI3:       1379       5217       4469       2506  Function call interrupts
+	IPI4:          0          0          0          0  CPU stop interrupts
+	IPI5:       1315        916        875        422  IRQ work interrupts
+	IPI6:          0          0          0          0  completion interrupts
