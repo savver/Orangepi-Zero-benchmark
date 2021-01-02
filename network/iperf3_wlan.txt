@@ -1,0 +1,40 @@
+orangepi@orangepizero:~$ iperf3 -c 192.168.1.48
+
+	Connecting to host 192.168.1.48, port 5201
+	[  5] local 192.168.1.79 port 48048 connected to 192.168.1.48 port 5201
+	[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+	[  5]   0.00-1.00   sec  1.30 MBytes  10.9 Mbits/sec    0   84.8 KBytes
+	[  5]   1.00-2.00   sec  1.24 MBytes  10.4 Mbits/sec    0   89.1 KBytes
+	[  5]   2.00-3.00   sec  1.12 MBytes  9.38 Mbits/sec    0    102 KBytes
+	[  5]   3.00-4.00   sec  1.24 MBytes  10.4 Mbits/sec    0    102 KBytes
+	[  5]   4.00-5.00   sec  1.18 MBytes  9.90 Mbits/sec    0    119 KBytes
+	[  5]   5.00-6.00   sec  1.06 MBytes  8.86 Mbits/sec    0    119 KBytes
+	[  5]   6.00-7.00   sec  1.43 MBytes  12.0 Mbits/sec    0    164 KBytes
+	[  5]   7.00-8.00   sec  1.12 MBytes  9.38 Mbits/sec    0    164 KBytes
+	[  5]   8.00-9.00   sec  1.12 MBytes  9.38 Mbits/sec    0    164 KBytes
+	[  5]   9.00-10.00  sec  1.12 MBytes  9.38 Mbits/sec    0    164 KBytes
+	- - - - - - - - - - - - - - - - - - - - - - - - -
+	[ ID] Interval           Transfer     Bitrate         Retr
+	[  5]   0.00-10.00  sec  11.9 MBytes  10.0 Mbits/sec    0             sender
+	[  5]   0.00-10.00  sec  11.6 MBytes  9.72 Mbits/sec                  receiver
+	
+--------------------------------------------------------------------------------------------	
+root@orangepizero:~# iperf3 -u -c 192.168.1.49 -b 0
+
+	Connecting to host 192.168.1.49, port 5201
+	[  5] local 192.168.1.79 port 58141 connected to 192.168.1.49 port 5201
+	[ ID] Interval           Transfer     Bitrate         Total Datagrams
+	[  5]   0.00-1.00   sec  1.33 MBytes  11.1 Mbits/sec  960
+	[  5]   1.00-2.00   sec  1.31 MBytes  11.0 Mbits/sec  950
+	[  5]   2.00-3.00   sec  1.26 MBytes  10.5 Mbits/sec  910
+	[  5]   3.00-4.00   sec  1.28 MBytes  10.8 Mbits/sec  930
+	[  5]   4.00-5.00   sec  1.30 MBytes  10.9 Mbits/sec  940
+	[  5]   5.00-6.00   sec  1.30 MBytes  10.9 Mbits/sec  940
+	[  5]   6.00-7.00   sec  1.24 MBytes  10.4 Mbits/sec  900
+	[  5]   7.00-8.00   sec  1.26 MBytes  10.5 Mbits/sec  910
+	[  5]   8.00-9.00   sec  1.30 MBytes  10.9 Mbits/sec  940
+	[  5]   9.00-10.00  sec  1.26 MBytes  10.5 Mbits/sec  910
+	- - - - - - - - - - - - - - - - - - - - - - - - -
+	[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+	[  5]   0.00-10.00  sec  12.8 MBytes  10.8 Mbits/sec  0.000 ms  0/9290 (0%)  sender
+	[  5]   0.00-10.05  sec  12.8 MBytes  10.7 Mbits/sec  1.596 ms  0/9290 (0%)  receiver
